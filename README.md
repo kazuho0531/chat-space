@@ -8,6 +8,7 @@
 ### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
+- has_many :massages
 
 
 ## usersテーブル
@@ -21,6 +22,7 @@
 ### Association
 - has_many :groups_users
 - has_many :groups, through: :groups_users
+- has_many :massages
 
 
 ## massagesテーブル
@@ -33,8 +35,8 @@
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- has_many :group
-- has_many :user
+- belong_to :group
+- belong_to :user
 
 
 ## groups_usersテーブル
