@@ -29,8 +29,8 @@
 |------|----|-------|
 |text|text|null: false|
 |image|string|
-|group_id|inteder|null: false, foreign_key: true|
-|user_id|inteder|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :group
