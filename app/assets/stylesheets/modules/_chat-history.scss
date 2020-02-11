@@ -1,0 +1,36 @@
+.tweet {
+  padding-bottom: 46px;
+  &__upper-info {
+    margin: 0 0 10px;
+    display: flex;
+  }
+}
+
+.upper-info {
+  &__talker {
+    font-size: 16px;
+    color: #333333;
+  }
+  &__time {
+    font-size: 12px;
+    color: #999999;
+    margin-left: 10px;
+  }
+}
+
+.tweet {
+  &__show {
+    font-size: 14px;
+    color: #434A54;
+    padding-bottom: 40px;
+  }
+}
+
+.chat-main {
+  &__form{
+  height: 50px;
+  width: 100%;
+  background-color: $white;
+  position: relative;
+ }
+}
