@@ -34,26 +34,42 @@
 .group-lists {
   &__group{
     padding-bottom: 40px;
+    // color: $white;
   }
 }
 
-.group-lists {
-  &__group h1 {
-    font-size: 15px;
-    color: $white;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  &__group p1 {
-    font-size: 11px;
-    color: $white;
-    font-weight: bold;
-  }
-}
+// .group-lists {
+//   &__group h1 {
+//     font-size: 15px;
+//     color: $white;
+//     font-weight: bold;
+//     margin-bottom: 5px;
+//   }
+//   &__group p1 {
+//     font-size: 11px;
+//     color: $white;
+//     font-weight: bold;
+//   }
+// }
 
 .edit-btn {
   display: flex;
   justify-content: flex-end;
   color: $skyblue;
   text-decoration: none;
+}
+
+.group {
+  &__name {
+    font-size: 15px;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &__message {
+    font-size: 11px;
+    color: $white;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
 }

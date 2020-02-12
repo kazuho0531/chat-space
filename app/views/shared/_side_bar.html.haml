@@ -1,22 +1,20 @@
 .side-bar
   .side-bar__header
     .header__top-items
-      .top-items__name masa
+      .top-items__name
+      = current_user.name
       .top-items__icons
         .icons__icon_edit
-          = link_to "#", class: "icon-edit" do
-            = icon('fas' , 'edit')
+          = link_to new_group_path do
+            = icon('fas' , 'edit', class: 'icon')
         .icons__icon_cog
-          = link_to "#", class: "icon-cog" do
-            = icon('fas' , 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .side-bar__group-lists
-    .group-lists__group
-      %h1 techcamp
-      %p1 まだメッセージがありません
-    .group-lists__group
-      %h1 techcamp
-      %p1 まだメッセージがありません
-    .group-lists__group
-      %h1 techcamp
-      %p1 まだメッセージがありません
-
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
