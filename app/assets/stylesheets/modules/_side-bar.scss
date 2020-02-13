@@ -7,51 +7,101 @@
     height: 100px;
     display: flex;
     align-items:center;
+    &__top-items {
+      width: 260px;
+      height: 30px;
+      margin: 0 auto;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: $white;
+      &__name {
+        line-height: 30px;
+        float: left;
+        color: $white;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &__icons {
+        height: 30px;
+        width: 60px;
+        float: right;
+        line-height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        &__icon-edit a{
+          margin-right: 5px;
+          color: $white;
+        }
+        &__icon-cog a{
+          color: $white;
+        }
+      }
+    }
   }
   &__group-lists {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
+    overflow: auto;
+    text-decoration: none;
+    &__group {
+      &__name {
+        font-size: 15px;
+        color: $white;
+        font-weight: bold;
+        margin-bottom: 5px;
+        list-style: none;
+      }
+      &__message {
+        font-size: 11px;
+        color: $white;
+        font-weight: bold;
+        margin-bottom: 40px;
+        list-style: none;
+      }
+    }
   }
 }
 
-.header {
-  &__top-items {
-    width: 260px;
-    height: 30px;
-    margin: 0 auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    color: $white;
-  }
-}
+// .header {
+//   &__top-items {
+//     width: 260px;
+//     height: 30px;
+//     margin: 0 auto;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     color: $white;
+//   }
+// }
 
-.top-items {
-  &__name {
-    line-height: 30px;
-    float: left;
-    color: $white;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  &__icons {
-    height: 30px;
-    width: 60px;
-    float: right;
-    line-height: 30px;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
+// .top-items {
+//   &__name {
+//     line-height: 30px;
+//     float: left;
+//     color: $white;
+//     font-weight: bold;
+//     font-size: 16px;
+//   }
+//   &__icons {
+//     height: 30px;
+//     width: 60px;
+//     float: right;
+//     line-height: 30px;
+//     display: flex;
+//     justify-content: flex-end;
+//   }
+// }
 
-.icons__icon_edit {
-  margin-right: 5px;
-}
+// .icons__icon_edit {
+//   margin-right: 5px;
+// }
 
-.icon-edit {
-  color: $white;
-}
+// .icon-edit {
+//   color: $white;
+// }
 
-.icon {
-  color: $white;
-}
+// .icon {
+//   color: $white;
+// }
+
+

@@ -1,34 +1,22 @@
 .chat-main
   .chat-main__group-info
-    .group-info__current-group あああああ
-    .group-info__member-list Member : masa
-  .chat-main__edit-btn
-    = link_to "#", class: "edit-btn" do
-      Edit
-  .chat-main__chat-history
-    .chat-history__tweet
-      .tweet__upper-info
-        .upper-info__talker techcamp
-        .upper-info__time 2020/02/10(Mon) 20:28:35
-      .tweet__show まだメッセージがありません
-      .tweet__upper-info
-        .upper-info__talker techcamp
-        .upper-info__time 2020/02/10(Mon) 20:28:35
-      .tweet__show まだメッセージがありません
-      .tweet__upper-info
-        .upper-info__talker techcamp
-        .upper-info__time 2020/02/10(Mon) 20:28:35
-      .tweet__show まだメッセージがありません
-  .chat-main__form
-    .form__message-form
-      .message-form__input-box
-        %input{type: "text", placeholder: " type a message", class: "input-box__text"}
-      .message-form__icon-image
-        %label{class:"input-box__image",for: "image"}
-          %input{type: "file", class: "image", id: "image"}
-            = icon('far' , 'image')                 
-      .message-form__send-btn
-        = link_to "#", class: "send-btn" do
-          Send
+    .chat-main__group-info__left-box
+      .chat-main__group-info__left-box__current-group
+        = @group.name
+      .chat-main__group-info__left-box__member-list
+        - @group.users.each do |user|
+          = user.name
+    .chat-main__group-info__edit-btn
+      = link_to edit_group_url(@group) do
+        Edit
+  .messages
+    = render @messages
 
-    
+  .chat-main__form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'chat-main__form__text', placeholder: 'type a message'
+      .form
+        = f.label :image, class: 'chat-main__form__image' do
+          = icon('far', 'image', class: 'image')
+          = f.file_field :image, class: 'file'
+      = f.submit 'Send', class: 'chat-main__form__btn'
