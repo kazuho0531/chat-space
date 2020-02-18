@@ -1,18 +1,12 @@
-
 .chat-main {
   width: calc(100vw - 300px);
   height: 100%;
-  // position: relative;
   &__form {
     background-color: #d2d2d2;
     height: 90px;
-    // padding-left:40px;
     padding: 20px 25px;
-    // width: calc(100vw - 450px);
-    // margin-bottom: 0;
     position: absolute;
     bottom: 0;
-    // z-index: 1;
     width: calc(100vw - 300px);
     .new_message {
       display: flex;
@@ -39,7 +33,6 @@
       border: $skyblue solid 1px;
       height: 50px;
       width: 100px;
-      // padding-left: 25px;
       margin-left: 15px;
       line-height: 50px;
       color: $white;
@@ -49,14 +42,3 @@
 }
   
   
-
-
-
-// .chat-main {
-//   &__form{
-//   height: 50px;
-//   width: 100%;
-//   background-color: $white;
-//   position: relative;
-//  }
-// }
