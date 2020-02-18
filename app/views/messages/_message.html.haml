@@ -1,11 +1,11 @@
-.chat-main__messages
-  .chat-main__messages__chat-history
-    .chat-main__messages__chat-history__upper-info
-      .chat-main__messages__chat-history__upper-info__talker 
+.chat-main__messages__message
+  .chat-main__messages__message__chat-history
+    .chat-main__messages__message__chat-history__upper-info
+      .chat-main__messages__message__chat-history__upper-info__talker 
         = message.user.name
-      .chat-main__messages__chat-history__upper-info__time
+      .chat-main__messages__message__chat-history__upper-info__time
         = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-    .chat-main__messages__chat-history__show
+    .chat-main__messages__message__chat-history__show
       - if message.content.present?
         %p.lower-message__content
           = message.content

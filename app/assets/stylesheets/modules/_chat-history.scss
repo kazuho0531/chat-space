@@ -1,33 +1,35 @@
 
 .chat-main {
   width: calc(100vw - 300px);
-  // height: 100%;
-  // height: 100%;
   &__messages {
     padding: 40px 46px 0 46px;
     background-color: #fafafa;
-    // overflow: hidden;
-    &__chat-history {
-      // padding-bottom: 46px;
-      // height: calc(100vh - 00px);
-      &__upper-info {
-        margin: 0 0 10px;
-        display: flex;
-        &__talker {
-          font-size: 16px;
-          color: #333333;
+    height: calc(100vh - 190px);
+    overflow-y: scroll;
+    &__message {
+      // padding-bottom: 40px;
+      // overflow: auto;
+      &__chat-history {
+        padding-bottom: 40px;
+        &__upper-info {
+          margin: 0 0 10px;
+          display: flex;
+          &__talker {
+            font-size: 16px;
+            color: #333333;
+          }
+          &__time {
+            font-size: 12px;
+            color: #999999;
+            margin-left: 10px;
+          }
         }
-        &__time {
-          font-size: 12px;
-          color: #999999;
-          margin-left: 10px;
+        &__show {
+          font-size: 14px;
+          color: #434A54;
+          padding-bottom: 10px;
         }
       }
-      &__show {
-        font-size: 14px;
-        color: #434A54;
-        padding-bottom: 10px;
-      }
-    }
+    }  
   }
 }
