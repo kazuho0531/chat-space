@@ -1,5 +1,3 @@
-
-
 .side-bar {
   width: 300px;
   &__header {
@@ -43,7 +41,6 @@
     height: calc(100vh - 100px);
     padding: 20px 20px 0;
     overflow: auto;
-    // text-decoration: none;
     &__group {
       &__name {
         font-size: 15px;
@@ -66,46 +63,3 @@
 a {
   text-decoration: none;
 }
-
-// .header {
-//   &__top-items {
-//     width: 260px;
-//     height: 30px;
-//     margin: 0 auto;
-//     margin-left: 20px;
-//     margin-right: 20px;
-//     color: $white;
-//   }
-// }
-
-// .top-items {
-//   &__name {
-//     line-height: 30px;
-//     float: left;
-//     color: $white;
-//     font-weight: bold;
-//     font-size: 16px;
-//   }
-//   &__icons {
-//     height: 30px;
-//     width: 60px;
-//     float: right;
-//     line-height: 30px;
-//     display: flex;
-//     justify-content: flex-end;
-//   }
-// }
-
-// .icons__icon_edit {
-//   margin-right: 5px;
-// }
-
-// .icon-edit {
-//   color: $white;
-// }
-
-// .icon {
-//   color: $white;
-// }
-
-
