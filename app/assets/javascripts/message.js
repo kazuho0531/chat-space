@@ -9,7 +9,8 @@ $(function(){
                           ${message.user_name}
                         </div>
                         <div class="chat-main__messages__message__chat-history__upper-info__time">
-                          ${message.created_at.strftime("%Y年%m月%d日 %H時%M分")}
+                          ${message.created_at}
+                          // .strftime("%Y年%m月%d日 %H時%M分")
                         </div>
                       </div>
                       <div class="chat-main__messages__message__chat-history__show">
@@ -116,7 +117,7 @@ $(function(){
         }
      })
      .fail(function() {
-       console.log('alert');
+       console.log('error');
      });
   };
    if (document.location.href.match(/\/groups\/\d+\/messages/)) {
